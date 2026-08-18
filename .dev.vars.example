@@ -1,0 +1,2 @@
+# Allows OpenNext preview to load local Next.js variables from .env.local.
+NEXTJS_ENV=development
