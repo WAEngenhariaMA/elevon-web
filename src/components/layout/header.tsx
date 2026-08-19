@@ -23,7 +23,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6 sm:px-10 lg:px-16">
-        <Link href="/" className="focus-ring text-xl font-bold tracking-[.18em] text-[#0B1320]">
+        <Link href="/" className="focus-ring text-2xl font-extrabold tracking-[.18em] text-[#0B1320]">
           ELE<span className="text-[#D4AF37]">VON</span>
         </Link>
 

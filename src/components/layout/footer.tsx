@@ -1,13 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
     <footer className="bg-[#07101c] px-6 py-10 text-slate-400 sm:px-10 lg:px-16">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 sm:flex-row">
         <div>
-          <p className="text-lg font-bold tracking-[.18em] text-white">
-            ELE<span className="text-[#D4AF37]">VON</span>
-          </p>
+          <Image src="/elevon-logo.png" alt="Elevon" width={240} height={70} className="h-12 w-auto" />
           <p className="mt-2 text-sm">Evolução, tecnologia e resultados.</p>
         </div>
 

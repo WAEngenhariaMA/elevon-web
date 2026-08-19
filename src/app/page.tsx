@@ -30,7 +30,7 @@ const organizationJsonLd = {
   name: "Elevon",
   url: "https://elevon.digital.br",
   description:
-    "A Elevon conecta engenharia, inteligência artificial, dados, tecnologia e produtos digitais para criar soluções que geram evolução real.",
+    "A ELEVON é uma empresa de engenharia e tecnologia que integra inteligência artificial, automação, dados e software para transformar desafios reais em soluções eficientes, inteligentes e escaláveis.",
   slogan: "Evolução • Tecnologia • Resultados",
 };
 
@@ -53,25 +53,25 @@ export default function Home() {
                 EVOLUÇÃO • TECNOLOGIA • RESULTADOS
               </p>
               <h1 className="max-w-4xl text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl">
-                Tecnologia que transforma conhecimento em{" "}
+                Engenharia e tecnologia para transformar desafios em{" "}
                 <span className="text-[#D4AF37]">resultados.</span>
               </h1>
               <p className="mt-7 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                A Elevon conecta engenharia, inteligência artificial, dados, tecnologia e
-                produtos digitais para criar soluções que geram evolução real.
+                A ELEVON integra engenharia, inteligência artificial, automação, dados e software
+                para criar soluções eficientes, inteligentes e escaláveis.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link
-                  href="#ecossistema"
+                  href="#solucoes"
                   className="focus-ring inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-6 py-3.5 text-sm font-bold text-[#0B1320]"
                 >
-                  Conheça a Elevon <ArrowRight size={17} />
+                  Conheça nossas soluções <ArrowRight size={17} />
                 </Link>
                 <Link
-                  href="#solucoes"
+                  href="#contato"
                   className="focus-ring rounded-full border border-white/25 px-6 py-3.5 text-sm font-bold hover:border-[#D4AF37]"
                 >
-                  Ver soluções
+                  Fale com a Elevon
                 </Link>
               </div>
             </div>
