@@ -57,6 +57,15 @@ export default function Login() {
           />
         </label>
 
+        <div className="mt-3 text-right">
+          <Link
+            href="/admin/esqueci-senha"
+            className="text-sm font-medium text-slate-600 hover:text-[#0B1320]"
+          >
+            Esqueci minha senha
+          </Link>
+        </div>
+
         <button className="focus-ring mt-7 w-full rounded-lg bg-[#0B1320] py-3 text-sm font-bold text-white">
           Entrar
         </button>

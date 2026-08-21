@@ -1,8 +1,12 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-export async function proxy(request: NextRequest) {
-  if (request.nextUrl.pathname === "/admin/login") {
+export async function middleware(request: NextRequest) {
+  if (
+    ["/admin/login", "/admin/esqueci-senha", "/admin/redefinir-senha"].includes(
+      request.nextUrl.pathname,
+    )
+  ) {
     return NextResponse.next();
   }
 
