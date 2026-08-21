@@ -4,7 +4,7 @@ export const verticals = [
     name: "Elevon Digital",
     eyebrow: "Produtos e soluções digitais",
     description: "Estratégia, experiências digitais e produtos que aproximam marcas de resultados.",
-    color: "#2563EB",
+    color: "#A855F7",
     whatsappMessage: "Olá, conheci a Elevon e gostaria de saber mais sobre soluções Digitais.",
   },
   {
@@ -12,7 +12,7 @@ export const verticals = [
     name: "Elevon Engenharia",
     eyebrow: "Engenharia orientada por dados",
     description: "Planejamento, automação e tecnologia para decisões mais eficientes e operações robustas.",
-    color: "#D4AF37",
+    color: "#0EA5E9",
     whatsappMessage: "Olá, conheci a Elevon e gostaria de conversar sobre soluções de Engenharia.",
   },
   {
@@ -20,7 +20,7 @@ export const verticals = [
     name: "Elevon AI",
     eyebrow: "Inteligência Artificial aplicada",
     description: "Automação inteligente e IA para transformar informação em vantagem competitiva.",
-    color: "#8B5CF6",
+    color: "#2DD4BF",
     whatsappMessage: "Olá, conheci a Elevon e gostaria de saber mais sobre soluções de Inteligência Artificial.",
   },
   {
@@ -28,7 +28,7 @@ export const verticals = [
     name: "Elevon Academy",
     eyebrow: "Conhecimento que move",
     description: "Cursos, treinamentos e desenvolvimento para formar profissionais preparados para o futuro.",
-    color: "#10B981",
+    color: "#FACC15",
     whatsappMessage: "Olá, conheci a Elevon e gostaria de saber mais sobre cursos e treinamentos da Academy.",
   },
   {
@@ -36,7 +36,7 @@ export const verticals = [
     name: "Elevon Labs",
     eyebrow: "Inovação em construção",
     description: "Softwares, sistemas e experimentos que antecipam o próximo passo da tecnologia.",
-    color: "#EC4899",
+    color: "#F97316",
     whatsappMessage: "Olá, conheci a Elevon e gostaria de saber mais sobre os softwares e sistemas da Labs.",
   },
 ] as const;

@@ -2,14 +2,25 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { ProjectForm } from "../project-form";
-import { getProjectById } from "@/features/projects/queries";
+import { getAllProjects, getProjectById } from "@/features/projects/queries";
 import { updateProject } from "@/features/projects/actions";
 import { getAllCategories } from "@/features/categories/queries";
+import { getProjectMedia } from "@/features/projects/media-queries";
+import { ProjectMediaManager } from "@/components/admin/project-media-manager";
 
 export default async function EditProjectPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const [project, categories] = await Promise.all([getProjectById(id), getAllCategories().catch(() => [])]);
+  let project = await getProjectById(id).catch(() => null);
+  if (!project) {
+    const projects = await getAllProjects().catch(() => []);
+    project = projects.find((item) => item.slug === id) ?? null;
+  }
   if (!project) notFound();
+
+  const [categories, media] = await Promise.all([
+    getAllCategories().catch(() => []),
+    getProjectMedia(project.id).catch(() => []),
+  ]);
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -20,8 +31,9 @@ export default async function EditProjectPage({ params }: { params: Promise<{ id
       <ProjectForm
         project={project}
         categories={categories}
-        action={updateProject.bind(null, id, project.image_url)}
+        action={updateProject.bind(null, project.id, project.image_url, project.architecture_image_url)}
       />
+      <ProjectMediaManager projectId={project.id} media={media} />
     </div>
   );
 }

@@ -23,7 +23,6 @@ export function ProductForm({
   return (
     <form
       action={formAction}
-      encType="multipart/form-data"
       className="mt-8 space-y-5 rounded-2xl bg-white p-6 shadow-sm sm:p-8"
     >
       <FormError message={state.error} />

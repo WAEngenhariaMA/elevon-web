@@ -20,6 +20,7 @@ export async function getActiveProjects(): Promise<Project[]> {
       .from("projects")
       .select(SELECT_WITH_CATEGORY)
       .eq("active", true)
+      .in("status", ["em_andamento", "concluido"])
       .order("featured", { ascending: false })
       .order("created_at", { ascending: false });
     if (error) throw error;
@@ -36,6 +37,20 @@ export async function getProjectById(id: string): Promise<Project | null> {
     .select(SELECT_WITH_CATEGORY)
     .eq("id", id)
     .maybeSingle();
+  if (error) throw new Error(error.message);
+  return data as unknown as Project | null;
+}
+
+export async function getPublicProjectBySlug(slug: string): Promise<Project | null> {
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("projects")
+    .select(SELECT_WITH_CATEGORY)
+    .eq("slug", slug)
+    .eq("active", true)
+    .in("status", ["em_andamento", "concluido"])
+    .maybeSingle();
+
   if (error) throw new Error(error.message);
   return data as unknown as Project | null;
 }

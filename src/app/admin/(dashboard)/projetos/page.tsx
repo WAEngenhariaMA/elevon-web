@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Pencil } from "lucide-react";
+import { ExternalLink, Pencil } from "lucide-react";
 import { ListHeader } from "@/components/admin/list-header";
 import { FlashMessage, EmptyState } from "@/components/admin/feedback";
 import { StatusBadge, FeaturedBadge } from "@/components/admin/status-badge";
@@ -64,6 +64,17 @@ export default async function ProjectsPage({
                       >
                         <Pencil size={14} /> Editar
                       </Link>
+                      {project.active &&
+                        (project.status === "em_andamento" || project.status === "concluido") && (
+                          <Link
+                            href={`/projetos/${project.slug}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="focus-ring inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-100 hover:text-[#0B1320]"
+                          >
+                            <ExternalLink size={14} /> Ver página
+                          </Link>
+                        )}
                       <ConfirmDeleteButton action={deleteProject.bind(null, project.id)} />
                     </div>
                   </td>
