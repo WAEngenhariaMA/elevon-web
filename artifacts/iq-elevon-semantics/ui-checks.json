@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "name": "domain thresholds, absolute countdown, São Paulo calendar boundaries",
+      "result": "PASS"
+    },
+    {
+      "name": "M1 pre-alert ≤12s; entry deadline = entry +15s; expiry = entry +5m; V2 seconds and coherent timestamps",
+      "result": "PASS"
+    },
+    {
+      "name": "development auth: all five views reject missing/invalid sessions",
+      "result": "PASS"
+    },
+    {
+      "name": "desktop, pre-alert semantics, confirmed CALL, Shadow PUT and separation",
+      "result": "PASS"
+    },
+    {
+      "name": "375/390/430: five views without horizontal page overflow, sidebar navigation",
+      "result": "PASS"
+    },
+    {
+      "name": "history filters change records, summaries separated by engine",
+      "result": "PASS"
+    },
+    {
+      "name": "countdown READY → CLOSING → urgent ≤3s → EXPIRED, remains expired",
+      "result": "PASS"
+    },
+    {
+      "name": "keyboard focus is visible",
+      "result": "PASS"
+    },
+    {
+      "name": "no browser runtime/hydration errors",
+      "result": "PASS"
+    }
+  ],
+  "serverLog": "▲ Next.js 16.3.1 (Turbopack)\n- Local:         http://127.0.0.1:3101\n- Network:       http://127.0.0.1:3101\n✓ Ready in 1121ms\n✓ Running next.config.ts took 112ms\n⚠ The \"middleware\" file convention is deprecated. Please use \"proxy\" instead.\n\n  To migrate automatically, run:\n  npx @next/codemod@canary middleware-to-proxy .\n\n  Learn more: https://nextjs.org/docs/messages/middleware-to-proxy\n- Experiments (use with caution):\n  · serverActions\n\n GET /admin/iq-elevon 200 in 1076ms (next.js: 438ms, proxy.ts: 34ms, application-code: 604ms)\n GET /admin/iq-elevon 200 in 314ms (next.js: 10ms, proxy.ts: 23ms, application-code: 281ms)\n GET /admin/iq-elevon?view=historico 200 in 69ms (next.js: 10ms, proxy.ts: 15ms, application-code: 44ms)\n[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\n GET /admin/iq-elevon?view=motores 200 in 74ms (next.js: 9ms, proxy.ts: 19ms, application-code: 47ms)\n GET /admin/iq-elevon?view=evidencias 200 in 75ms (next.js: 9ms, proxy.ts: 19ms, application-code: 47ms)\n GET /admin/iq-elevon?view=sistema 200 in 74ms (next.js: 9ms, proxy.ts: 8ms, application-code: 56ms)\n GET /admin/iq-elevon 200 in 31ms (next.js: 9ms, proxy.ts: 11ms, application-code: 11ms)\n GET /admin/iq-elevon 200 in 82ms (next.js: 9ms, proxy.ts: 10ms, application-code: 64ms)\n GET /admin/iq-elevon 200 in 294ms (next.js: 8ms, proxy.ts: 14ms, application-code: 271ms)\n GET /admin/iq-elevon?view=historico 200 in 67ms (next.js: 9ms, proxy.ts: 18ms, application-code: 39ms)\n[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\n GET /admin/iq-elevon?view=motores 200 in 69ms (next.js: 9ms, proxy.ts: 17ms, application-code: 44ms)\n GET /admin/iq-elevon?view=evidencias 200 in 64ms (next.js: 9ms, proxy.ts: 8ms, application-code: 47ms)\n GET /admin/iq-elevon?view=sistema 200 in 77ms (next.js: 9ms, proxy.ts: 10ms, application-code: 58ms)\n GET /admin/iq-elevon 200 in 30ms (next.js: 9ms, proxy.ts: 11ms, application-code: 10ms)\n GET /admin/iq-elevon 200 in 85ms (next.js: 8ms, proxy.ts: 9ms, application-code: 68ms)\n GET /admin/iq-elevon 200 in 327ms (next.js: 8ms, proxy.ts: 14ms, application-code: 304ms)\n GET /admin/iq-elevon?view=historico 200 in 62ms (next.js: 9ms, proxy.ts: 14ms, application-code: 39ms)\n[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\n GET /admin/iq-elevon?view=motores 200 in 63ms (next.js: 9ms, proxy.ts: 8ms, application-code: 46ms)\n GET /admin/iq-elevon?view=evidencias 200 in 72ms (next.js: 9ms, proxy.ts: 16ms, application-code: 47ms)\n GET /admin/iq-elevon?view=sistema 200 in 79ms (next.js: 8ms, proxy.ts: 14ms, application-code: 56ms)\n GET /admin/iq-elevon 200 in 37ms (next.js: 8ms, proxy.ts: 18ms, application-code: 10ms)\n GET /admin/iq-elevon 200 in 87ms (next.js: 8ms, proxy.ts: 9ms, application-code: 69ms)\n GET /admin/iq-elevon?view=historico 200 in 69ms (next.js: 9ms, proxy.ts: 21ms, application-code: 39ms)\n GET /admin/iq-elevon 200 in 299ms (next.js: 8ms, proxy.ts: 16ms, application-code: 276ms)\n"
+}

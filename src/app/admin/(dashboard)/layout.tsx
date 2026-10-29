@@ -5,7 +5,7 @@ export default function AdminDashboardLayout({ children }: { children: ReactNode
   return (
     <div className="min-h-screen bg-slate-100 md:flex">
       <Sidebar />
-      <main className="flex-1 p-5 md:p-10">{children}</main>
+      <main className="min-w-0 flex-1 p-5 md:p-10">{children}</main>
     </div>
   );
 }

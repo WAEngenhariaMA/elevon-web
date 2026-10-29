@@ -1,0 +1,12 @@
+{
+  "results": [
+    {
+      "name": "domain thresholds, absolute countdown, São Paulo calendar boundaries",
+      "result": "PASS"
+    },
+    {
+      "name": "M1 pre-alert ≤12s; entry deadline = entry +15s; expiry = entry +5m; V2 seconds and coherent timestamps",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+
+> elevon-digital@0.1.0 build
+> next build
+
+▲ Next.js 16.3.1 (Turbopack)
+✓ Running next.config.ts took 83ms
+- Experiments (use with caution):
+  · serverActions
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead.
+
+  To migrate automatically, run:
+  npx @next/codemod@canary middleware-to-proxy .
+
+  Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.2s
+  Running TypeScript ...
+  Finished TypeScript in 7.1s ...
+  Collecting page data using 27 workers ...
+  Generating static pages using 27 workers (0/36) ...
+  Generating static pages using 27 workers (9/36) 
+  Generating static pages using 27 workers (18/36) 
+  Generating static pages using 27 workers (27/36) 
+✓ Generating static pages using 27 workers (36/36) in 857ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├   /[vertical]
+│ ├ ● /digital
+│ ├ ● /engenharia
+│ ├ ● /ai
+│ └ ● [+2 more paths]
+├ ƒ /admin
+├ ƒ /admin/banners
+├ ƒ /admin/banners/[id]
+├ ○ /admin/banners/novo
+├ ƒ /admin/categorias
+├ ƒ /admin/categorias/[id]
+├ ○ /admin/categorias/novo
+├ ƒ /admin/configuracoes
+├ ƒ /admin/configuracoes/[id]
+├ ○ /admin/configuracoes/novo
+├ ○ /admin/esqueci-senha
+├ ƒ /admin/iq-elevon
+├ ƒ /admin/links
+├ ƒ /admin/links/[id]
+├ ƒ /admin/links/novo
+├ ○ /admin/login
+├ ƒ /admin/produtos
+├ ƒ /admin/produtos/[id]
+├ ƒ /admin/produtos/novo
+├ ƒ /admin/projetos
+├ ƒ /admin/projetos/[id]
+├ ƒ /admin/projetos/novo
+├ ○ /admin/redefinir-senha
+├ ƒ /admin/redes-sociais
+├ ƒ /admin/redes-sociais/[id]
+├ ○ /admin/redes-sociais/novo
+├ ƒ /auth/callback
+├ ƒ /auth/forgot-password
+├ ƒ /auth/login
+├ ƒ /auth/update-password
+├ ƒ /links
+├ ○ /produtos
+├ ƒ /projetos/[slug]
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

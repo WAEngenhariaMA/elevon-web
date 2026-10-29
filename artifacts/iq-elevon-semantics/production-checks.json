@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "name": "domain thresholds, absolute countdown, São Paulo calendar boundaries",
+      "result": "PASS"
+    },
+    {
+      "name": "M1 pre-alert ≤12s; entry deadline = entry +15s; expiry = entry +5m; V2 seconds and coherent timestamps",
+      "result": "PASS"
+    },
+    {
+      "name": "production auth: all five views reject missing/invalid sessions",
+      "result": "PASS"
+    },
+    {
+      "name": "production data guard: no fixtures in any view",
+      "result": "PASS"
+    },
+    {
+      "name": "no browser runtime/hydration errors",
+      "result": "PASS"
+    }
+  ],
+  "serverLog": "▲ Next.js 16.3.1\n- Local:         http://127.0.0.1:3102\n- Network:       http://127.0.0.1:3102\n✓ Ready in 381ms\n✓ Running next.config.ts took 111ms\n"
+}

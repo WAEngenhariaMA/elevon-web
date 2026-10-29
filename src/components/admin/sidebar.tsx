@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import {
+  Activity,
   BarChart3,
   Boxes,
   FolderKanban,
@@ -20,6 +21,7 @@ import { logout } from "@/features/auth/actions";
 
 const navItems = [
   { href: "/admin", label: "Dashboard", icon: BarChart3 },
+  { href: "/admin/iq-elevon", label: "IQ Elevon", icon: Activity },
   { href: "/admin/links", label: "Links", icon: Link2 },
   { href: "/admin/produtos", label: "Produtos", icon: Boxes },
   { href: "/admin/categorias", label: "Categorias", icon: Tag },
@@ -40,6 +42,7 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
           <Link
             key={href}
             href={href}
+            aria-current={active ? "page" : undefined}
             onClick={onNavigate}
             className={`focus-ring flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition ${
               active ? "bg-[#0B1320] text-white" : "text-slate-600 hover:bg-slate-100 hover:text-[#0B1320]"
